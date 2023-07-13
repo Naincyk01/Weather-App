@@ -8,7 +8,7 @@ const Inputs = () => {
         <input
           type="text"
           placeholder="Search for the city...."
-          className="text-xl font-light p-1 w-full shadow-xl focus:outline-none capitalize placeholder:lowercase"
+          className=" rounded-lg text-xl font-light p-1 w-full shadow-lg focus:outline-none capitalize placeholder:lowercase"
         />
 
         <HiOutlineSearch
