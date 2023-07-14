@@ -14,7 +14,7 @@ const TemperatureAndDetails = () => {
         <p>Cloudy or Whatever</p>
       </div>
       <div className="flex flex-row items-center justify-between text-xl text-white py-3">
-        <MdCircle size={40} className="text-orange-600 mt-2" />
+        <MdCircle size={40} className="text-orange-500 mt-2" />
         <p className="text-3xl  mb-2">34°</p>
         <div className="flex flex-col space-y-2">
 
