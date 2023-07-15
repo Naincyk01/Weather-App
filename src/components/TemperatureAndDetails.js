@@ -15,7 +15,7 @@ const TemperatureAndDetails = () => {
       </div>
       <div className="flex flex-row items-center justify-between text-xl text-white py-3">
         <MdCircle size={40} className="text-orange-500 mt-2" />
-        <p className="text-3xl  mb-2">34°</p>
+        <p className="text-3xl  mb-2 cursor-pointer transition ease-out hover:scale-125">34°</p>
         <div className="flex flex-col space-y-2">
 
           <div className="flex font-light text-sm items-center justify-center">
@@ -23,7 +23,7 @@ const TemperatureAndDetails = () => {
             Real fell :
             <span
               className="
-            font-medium ml-1 mb-1 "
+            font-medium ml-1 mb-1 cursor-pointer transition ease-out hover:scale-125 "
             >
               32°
             </span>
@@ -33,7 +33,7 @@ const TemperatureAndDetails = () => {
             Humidity :
             <span
               className="
-            font-medium ml-1 mb-1 "
+            font-medium ml-1 mb-1cursor-pointer transition ease-out hover:scale-125 "
             >
               65%
             </span>
@@ -43,7 +43,7 @@ const TemperatureAndDetails = () => {
             Wind Speed :
             <span
               className="
-            font-medium ml-1 mb-1 "
+            font-medium ml-1 mb-1 cursor-pointer transition ease-out hover:scale-125"
             >
               11 km/h
             </span>
