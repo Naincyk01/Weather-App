@@ -17,17 +17,19 @@ const TemperatureAndDetails = () => {
         <MdCircle size={40} className="text-orange-500 mt-2" />
         <p className="text-3xl  mb-2 cursor-pointer transition ease-out hover:scale-125">34°</p>
         <div className="flex flex-col space-y-2">
-
-        <div className="flex font-light text-sm items-center justify-center">
-            <PiWindBold size={25} className="mt-1 mr-1" />
-            Wind Speed :
+      
+          <div className="flex font-light text-sm items-center justify-center">
+            <CiTempHigh size={25} className="mt-1 " />
+            Real fell :
             <span
               className="
-            font-medium ml-1 mb-1 cursor-pointer transition ease-out hover:scale-125"
+            font-medium ml-1 mb-1 cursor-pointer transition ease-out hover:scale-125 "
             >
-              11 km/h
+              32°
             </span>
           </div>
+
+        
           <div className="flex font-light text-sm items-center justify-center">
             <WiHumidity size={25} className="mt-1 " />
             Humidity :
@@ -39,16 +41,15 @@ const TemperatureAndDetails = () => {
             </span>
           </div>
           <div className="flex font-light text-sm items-center justify-center">
-            <CiTempHigh size={25} className="mt-1 " />
-            Real fell :
+            <PiWindBold size={25} className="mt-1 mr-1" />
+            Wind Speed :
             <span
               className="
-            font-medium ml-1 mb-1 cursor-pointer transition ease-out hover:scale-125 "
+            font-medium ml-1 mb-1 cursor-pointer transition ease-out hover:scale-125"
             >
-              32°
+              11 km/h
             </span>
           </div>
-          
         </div>
       </div>
       <div className="flex flex-row items-center justify-center space-x-3 text-white text-sm py-2">
