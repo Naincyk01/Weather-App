@@ -14,7 +14,7 @@ const TemperatureAndDetails = () => {
         <p>Cloudy or Whatever</p>
       </div>
       <div className="flex flex-row items-center justify-between text-xl text-white py-3">
-        <MdCircle size={40} className="text-orange-500 mt-2" />
+        <MdCircle size={40} className="text-orange-600 mt-2" />
         <p className="text-3xl  mb-2 cursor-pointer transition ease-out hover:scale-125">34°</p>
         <div className="flex flex-col space-y-2">
       
@@ -54,19 +54,19 @@ const TemperatureAndDetails = () => {
       </div>
       <div className="flex flex-row items-center justify-center space-x-3 text-white text-sm py-2">
         <WiSunrise/>
-        <p className="font-light transition ease-out hover:scale-125"> Rise: <span className="font-medium ml-1">6:45 AM</span></p>
+        <p className="font-light "> Rise: <span className="font-medium ml-1">6:45 AM</span></p>
         <p className="font-light">|</p>
 
         <TbSunset2/>
-        <p className="font-light cursor-pointer transition ease-out hover:scale-125"> Set: <span className="font-medium ml-1 ">7:45 PM</span></p>
+        <p className="font-light "> Set: <span className="font-medium ml-1 ">7:45 PM</span></p>
         <p className="font-light">|</p>
 
         <LiaTemperatureHighSolid/>
-        <p className="font-light cursor-pointer transition ease-out hover:scale-125"> High: <span className="font-medium ml-1">45°</span></p>
+        <p className="font-light "> High: <span className="font-medium ml-1">45°</span></p>
         <p className="font-light">|</p>
 
         <LiaTemperatureLowSolid/>
-        <p className="font-light cursor-pointer transition ease-out hover:scale-125"> Low: <span className="font-medium ml-1">40°</span></p>
+        <p className="font-light "> Low: <span className="font-medium ml-1">40°</span></p>
         <p className="font-light">|</p>
       </div>
     </div>

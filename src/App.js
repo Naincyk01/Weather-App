@@ -7,7 +7,7 @@ import TemperatureAndDetails from './components/TemperatureAndDetails';
 import Forecast from './components/Forecast';
 function App() {
   return (
-    <div className="mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-pink-500 to-purple-300  h-fit 
+    <div className="mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-green-500 to-purple-400  h-fit 
     shadow-xl shadow-gray-400 text-center font-bold text-2xl">
      <TopButtons/>
      <Inputs/>
