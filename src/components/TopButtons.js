@@ -6,19 +6,19 @@ function TopButtons(){
     const cities =[
      {
          id:1,
-    title:"london"
+    title:"I"
      },
      {
          id:2,
-    title:"england"
+    title:"❤️"
      },
      {
          id:3,
-    title:"france"
+    title:"You"
      },
      {
          id:4,
-    title:"itly"
+    title:"Jaan"
      }
     ]
 

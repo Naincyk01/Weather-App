@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TimeAndLocation = () => {
+const TimeAndLocation = ({weather:{name,country}}) => {
   return <div>
     <div className='flex items-center justify-center my-6'>
         <p className='text-white text-xl font-extralight'>
@@ -8,7 +8,7 @@ const TimeAndLocation = () => {
         </p>
     </div>
     <div className='flex items-center justify-center my-3'>
-<p className='text-white text-3xl font-bold' >Berlin,DE</p>
+<p className='text-white text-3xl font-bold' >{`${name},${country}`}</p>
     </div>
   </div>
   
