@@ -1,17 +1,17 @@
-import React from 'react'
+// import React from 'react'
 
-const TimeAndLocation = ({weather:{name,country}}) => {
-  return <div>
-    <div className='flex items-center justify-center my-6'>
-        <p className='text-white text-xl font-extralight'>
-     Tuesday,31 May 2022 | Local time:12:46 PM
-        </p>
-    </div>
-    <div className='flex items-center justify-center my-3'>
-<p className='text-white text-3xl font-bold' >{`${name},${country}`}</p>
-    </div>
-  </div>
+// const TimeAndLocation = ({weather:{name,country}}) => {
+//   return <div>
+//     {/* <div className='flex items-center justify-center my-6'>
+//         <p className='text-white text-xl font-extralight'>
+//      Tuesday,31 May 2022 | Local time:12:46 PM
+//         </p>
+//     </div> */}
+//     <div className='flex items-center justify-center my-3'>
+// <p className='text-white text-3xl font-bold' >{`${name},${country}`}</p>
+//     </div>
+//   </div>
   
-}
+// }
 
-export default TimeAndLocation;
+// export default TimeAndLocation;

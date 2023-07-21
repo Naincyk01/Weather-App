@@ -1,4 +1,4 @@
-import { DateTime } from "luxon";
+//import { DateTime } from "luxon";//
 
 // const API_KEY = "23c1ebea0811d0767f45807e323169e8";
 // const BASE_URL = "https://api.openweathermap.org/data/2.5";
@@ -107,13 +107,14 @@ const getFormattedWeatherData = async (city, units = "metric") => {
   const data = await fetch(URL)
     .then((res) => res.json())
     .then((data) => data);
+  
 
 
   const {
     weather,
     main: { temp, feels_like, temp_min, temp_max, pressure, humidity },
     wind: { speed },
-    sys: { country,sunrise,sunset},
+    sys: { country},
     name,
     dt,
    
@@ -133,16 +134,27 @@ const getFormattedWeatherData = async (city, units = "metric") => {
     country,
     name,
     dt,
-    sunrise,
-    sunset
+    
   };
 };
- const formatToLocalTime = (
-    secs,
-    zone,
-    format = "cccc,dd LLL yyyy' | Local time: 'hh:mm a"
-  ) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
+
+// const formatForecastWeather = (data) => {
+//    let {timezone} = data;
+
+//    return {
+//          title: formatToLocalTime(dt, timezone, "ccc"),
+//    }
+//    };
+  
+//  const formatToLocalTime = (
+//     secs,
+//     zone,
+//     format = "cccc,dd LLL yyyy' | Local time: 'hh:mm a"
+//   ) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
   
   
 
-export { getFormattedWeatherData,formatToLocalTime,makeIconURL };
+
+
+
+export { getFormattedWeatherData };
