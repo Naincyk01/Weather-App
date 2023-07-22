@@ -63,8 +63,8 @@
 // }
 
 //export default App
-import cold from "./assets/cold.jpg";
-import hot from "./assets/hot.jpeg";
+import cold from "./assets/coldnew.png";
+import hot from "./assets/hot.jpg";
 import Description from "./components/Description";
 import { useState,useEffect } from "react";
 import { getFormattedWeatherData } from "./Services/weatherService";
@@ -72,7 +72,7 @@ import { getFormattedWeatherData } from "./Services/weatherService";
 function App() {
 
 const [bg,setbg] =useState(hot)
-  const [city ,setcity] = useState("pakistan")
+  const [city ,setcity] = useState("paris")
   const [weather,setWeather] = useState(null);
   const [units,setUnits] = useState("metric");
 
@@ -119,12 +119,12 @@ const enterKeyPressed = (e) =>{
           </div>
           <div className="section section_temperature">
             <div className="icon">
-              <h3>{`${weather.name},${weather.country}`}</h3>
+              <h2>{`${weather.name},${weather.country}`}</h2>
               <img
                 src={weather.iconURL}
                 alt="weathericon"
               />
-              <h1>{weather.description}</h1>
+              <h2>{weather.description}</h2>
             </div>
             <div className="temperature">
               <h1>{`${weather.temp.toFixed()} °${units === "metric" ? "C" : "F"}`}</h1>

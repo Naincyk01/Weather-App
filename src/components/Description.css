@@ -1,6 +1,6 @@
 .section_descriptions{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     gap: 2.5rem;
 }
 .card{
@@ -11,6 +11,7 @@
 background-color: var(--section-overlay);
 padding: 1rem;
 border-radius: 0.4rem;
+
 }
 .description_card-icon{
     width: 100%;
@@ -20,7 +21,7 @@ border-radius: 0.4rem;
     justify-content: center;
     gap: 5px;
     
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 
 }
 .description_card-icon>small{
