@@ -13,7 +13,15 @@ const Description = ({weather,units}) => {
   const windUnit = units === 'metric' ? 'm/s' : 'm/h'
   const cards= [
     {
-id:1,
+      id:1,
+      icon:<CiTempHigh/>,
+      title:"feels like",
+      data:weather.feels_like.toFixed(),
+      unit:tempUnit,
+      
+      },
+    {
+id:2,
 icon:<LiaTemperatureLowSolid/>,
 title:"min",
 data:weather.temp_min.toFixed(),
@@ -21,31 +29,16 @@ unit:tempUnit,
 
     },
     {
-id:2,
+id:3,
 icon:<LiaTemperatureHighSolid/>,
 title:"max",
 data:weather.temp_max.toFixed(),
 unit:tempUnit,
 
     },
-    {
-id:3,
-icon:<CiTempHigh/>,
-title:"feels like",
-data:weather.feels_like.toFixed(),
-unit:tempUnit,
 
-},
-{
+    {
 id:4,
-icon:<WiBarometer/>,
-title:"pressure",
-data:weather.pressure,
-unit:"hPa",
-
-},
-    {
-id:5,
 icon:<WiHumidity/>,
 title:"humidity",
 data:weather.humidity,
@@ -53,13 +46,21 @@ unit:"%",
 
     },
     {
-id:6,
+id:5,
 icon:<PiWindBold/>,
 title:"wind speed",
 data:weather.speed.toFixed(),
 unit:windUnit,
 
     },
+    {
+      id:6,
+      icon:<WiBarometer/>,
+      title:"pressure",
+      data:weather.pressure,
+      unit:"hPa",
+      
+      },
   ]
 
    return (

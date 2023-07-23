@@ -124,7 +124,7 @@ const enterKeyPressed = (e) =>{
                 src={weather.iconURL}
                 alt="weathericon"
               />
-              <h2>{weather.description}</h2>
+              <h3>{weather.description}</h3>
             </div>
             <div className="temperature">
               <h1>{`${weather.temp.toFixed()} °${units === "metric" ? "C" : "F"}`}</h1>

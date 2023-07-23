@@ -105,14 +105,25 @@
     /* border: 2px solid red; */
 
 }
-.icon>h3{
-    font-size: 15px;
-    font-weight: 200;
+.icon>h2{
+    font-size: 28px;
+    font-weight: bolder;
     text-transform: capitalize;
-    border: 2px solid red;
+    margin-right: 30px;
+    /* border: 2px solid rgb(179, 154, 154); */
+}
+.icon>h3{
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+   
+}
+.icon>img{
+    /* border: 2px solid red; */
+   margin-right: 19px;
 }
 .temperature>h1{
-    font-size: 70px;
+    font-size: 75px;
 }
 
 
