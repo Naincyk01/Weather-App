@@ -37,22 +37,23 @@ unit:tempUnit,
 
     },
 
+   
     {
 id:4,
-icon:<WiHumidity/>,
-title:"humidity",
-data:weather.humidity,
-unit:"%",
-
-    },
-    {
-id:5,
 icon:<PiWindBold/>,
 title:"wind speed",
 data:weather.speed.toFixed(),
 unit:windUnit,
 
     },
+    {
+      id:5,
+      icon:<WiHumidity/>,
+      title:"humidity",
+      data:weather.humidity,
+      unit:"%",
+      
+          },
     {
       id:6,
       icon:<WiBarometer/>,

@@ -125,5 +125,11 @@
 .temperature>h1{
     font-size: 75px;
 }
+.temperature>h1:hover{
+    transition: ease-in;
+   scale: 1.1;
+   cursor: pointer;
+   color: rgb(241, 231, 231);
+}
 
 
