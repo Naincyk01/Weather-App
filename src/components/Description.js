@@ -1,8 +1,9 @@
 import React from "react";
 import "./Description.css";
 
-import { LiaTemperatureHighSolid } from "react-icons/lia";
-import { LiaTemperatureLowSolid } from "react-icons/lia";
+import { FaTemperatureHigh } from "react-icons/fa"; 
+import { RiTempHotLine } from "react-icons/ri";
+import { FaTemperatureLow } from "react-icons/fa"; 
 import { CiTempHigh } from "react-icons/ci";
 import { WiHumidity } from "react-icons/wi";
 import { PiWindBold } from "react-icons/pi";
@@ -12,32 +13,31 @@ const Description = ({weather,units}) => {
   const tempUnit = units === 'metric' ? '°C' : '°F'
   const windUnit = units === 'metric' ? 'm/s' : 'm/h'
   const cards= [
+    
     {
-      id:1,
-      icon:<CiTempHigh/>,
-      title:"feels like",
-      data:weather.feels_like.toFixed(),
-      unit:tempUnit,
-      
-      },
-    {
-id:2,
-icon:<LiaTemperatureLowSolid/>,
+id:1,
+icon:<FaTemperatureLow/>,
 title:"min",
 data:weather.temp_min.toFixed(),
 unit:tempUnit,
 
     },
     {
+      id:2,
+      icon:<RiTempHotLine/>,
+      title:"feels like",
+      data:weather.feels_like.toFixed(),
+      unit:tempUnit,
+      
+      },
+    {
 id:3,
-icon:<LiaTemperatureHighSolid/>,
+icon:<FaTemperatureHigh/>,
 title:"max",
 data:weather.temp_max.toFixed(),
 unit:tempUnit,
 
     },
-
-   
     {
 id:4,
 icon:<PiWindBold/>,
